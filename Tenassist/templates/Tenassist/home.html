@@ -1,19 +1,16 @@
-
+{% extends './main_base.html' %}
 {% load static %}
-{% extends 'main_base.html' %}
+
 
 {% block content %}
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'assets/bootstrap.min.css' %}">
+   
     <title>Home</title>
 </head>
 <body>
     <div class="back">
-        {% include "Tenassist/navbar.html" %}
         <div class="d-flex flex-row">
             <div class="p-4">
                 <div class="">
@@ -63,7 +60,7 @@
                     <img src="{% static '/assets/welcome2.png'%}" alt="">
             </div>
         </div>
-        <script src="{% static 'assets/bootstrap.min.js' %}"></script>
+       
     </div>
 
 </body>
