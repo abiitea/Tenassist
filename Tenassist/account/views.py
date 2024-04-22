@@ -4,4 +4,4 @@ def home(request):
     return render(request, "tenassist/home.html",)
 
 def login(request):
-    return render(request, "tenassist/home.html",)
+    return render(request, "tenassist/login.html",)
