@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from . forms import PatientRegistrationForm
 from django.contrib.auth.forms import UserCreationForm
+
 def home(request):
     return render(request, "tenassist/home.html",)
 
