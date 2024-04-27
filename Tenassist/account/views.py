@@ -11,10 +11,10 @@ def login(request):
     return render(request, "tenassist/login.html",)
 def register_patient(request):
 
-    form = UserCreationForm()
+    form = PatientRegistrationForm()
     is_patient = True
     if request.method == 'POST':
-        form = UserCreationForm(request.POST, request.FILES)
+        form = PatientRegistrationForm(request.POST, request.FILES)
         
         if form.is_valid():
 
